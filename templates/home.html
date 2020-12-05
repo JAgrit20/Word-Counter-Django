@@ -12,7 +12,7 @@
 </head>
 <body>
     
-    <div class="row">
+    <!-- <div class="row">
         <form action="{% url 'count' %}">
         <form class="col s12" action="{% url 'count' %}">
           <div class="row">
@@ -20,19 +20,25 @@
             <form action="{% url 'count' %}"></form>
               This is line where you will type
               <div class="input-field inline">
-                <input id="email_inline" type="email" class="validate">
+                <input id="email_inline" type="text">
                 <label for="email_inline">Email</label>
                 <span class="helper-text" data-error="wrong" data-success="right">Enter the words here</span>
                     <button class="waves-effect waves-light btn" type="submit" value="count!!"> heelo</button>
                 </form>
                 <!-- <a class="waves-effect waves-light btn" type="submit"><i class="material-icons right">cloud</i>button</a> -->
-              </div>
+              <!-- </div>
             </div>
           </div>
         </form>
         </form>
-    </div>
-      
+    </div> -->
+       -->
+       <form action="{% url 'count' %}">
+           <h1>here we count</h1>
+           <textarea cols="40" rows="10" name="fullText"></textarea>
+       <br />
+       <input type="submit" value="COunt" />
+       </form>
     
     
 </body>

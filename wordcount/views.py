@@ -6,7 +6,11 @@ def homepage(request):
     return render(request,'home.html')
 
 def count(request):
-    return render(request,'count.html')
+    fulltext = request.GET['fullText']
+    # print(fulltext)
+    wordlist = fulltext.split();
+
+    return render(request,'count.html',{'fullText':fulltext,'count':len(wordlist)})
 
     # def homepage(request):
     # return render(request,'home.html',{"hithere":'this is jagrit'})
