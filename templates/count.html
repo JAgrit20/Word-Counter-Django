@@ -1,5 +1,12 @@
-this is the count page
+the words were {{fullText}}
 <br />
-{{fullText}}
+count was {{count}}
 <br />
-{{count}}
+
+<br />
+{%for word in sortedwords %}
+
+{{ word }} -->{{count}}
+
+<br/>
+{% endfor %}
